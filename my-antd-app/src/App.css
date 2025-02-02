@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #93e1a1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #ffffff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slidenav{
+  width: 240px;
+  background-color: rgb(7, 172, 248);
+  position: absolute;
+  height: 100%;
+  padding: 0 30px;
+  transform: all 1s;
+  transition: right 0.3s ease-in-out;
+}
+ul{
+  padding: 0;
+}
+ul li{
+  list-style-type: none;
+  margin: 10px 0;
+}
+ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  border-radius: 6px;
+}
+ul li a:hover,
+ul li a.active{
+  background: rgb(255, 255, 255);
+}
+
+.slidenav{
+  width: 240;
+  background-color: rgb(255, 0, 106);
+  position: absolute;
+  height: 100%;
+  padding: 0 30px;
+  transition: all 1s;
+  left: -100%;
+}
+
+.slidenav.active{
+  left: 0;
+}
+/* 
+header svg {
+  font-size: 20px;
+  position: fixed; 
+  top: 10px; 
+  left: 10px; 
+  cursor: pointer; 
+  z-index: 1000; 
+  color: white; 
+} */
